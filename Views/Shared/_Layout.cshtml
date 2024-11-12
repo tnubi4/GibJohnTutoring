@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="~/GibJohnTutoring.styles.css" asp-append-version="true" />
 </head>
 <body>
+    <div class="main-content">
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
@@ -43,16 +44,27 @@
             </div>
         </nav>
     </header>
+    </div>
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
+    
+    <footer>
+        &copy; 2024 - GibJohn Tutoring
+    </footer>
+  
 
+    
    
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
+
+    
 </body>
+
 </html>
+
