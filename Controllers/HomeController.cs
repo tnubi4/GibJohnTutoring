@@ -1,4 +1,5 @@
 using GibJohnTutoring.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -23,6 +24,7 @@ namespace GibJohnTutoring.Controllers
             return View();
         }
 
+        [Authorize]
         public IActionResult Booking()
         {
             return View();

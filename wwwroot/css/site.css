@@ -151,6 +151,39 @@ footer {
     font-style: italic;
 }
 
+.collabo {
+    display: flex; /* Enables flexbox for side-by-side layout */
+    align-items: center; /* Centers items vertically */
+    gap: 20px; /* Adds space between the text and the image */
+}
+
+.collabo-item {
+    flex: 1; /* Allows the text to take up available space */
+}
+
+.collabo-img1 img {
+    
+    width: 300px; /* Set a fixed width if desired */
+    height: 300px; /* Set a fixed height if desired */
+}
+
+.collabo-img2 img {
+    width: 300px; /* Set a fixed width if desired */
+    height: 300px; /* Set a fixed height if desired */
+}
+
+.collabo-img3 img {
+    width: 300px; /* Set a fixed width if desired */
+    height: 300px; /* Set a fixed height if desired */
+}
+
+
+.collabo h1 {
+    border-radius: 0.25em;
+    padding: 10px;
+    font-style: italic;
+}
+
 
 
 .logo1 h1 {
@@ -176,4 +209,46 @@ footer {
     font-weight: bold;
 }
 
+.collab {
+    background-color: #92D050;
+    color: white;
+    text-align: left;
+    padding: 50px 20px 20px;
+}
 
+.collab h2 {
+    color: black;
+    font-weight: bolder;
+    font-size: 38px;
+}
+
+.collab a {
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.collab a hover {
+    color: blue;
+}
+
+.table {
+    background-color: #92D050;
+}
+
+.book button {
+    color: white;
+    background-color: black;
+    float: right;
+}
+
+.booking h1 {
+    font-size: 22px;
+    color: black;
+    text-align: center;
+    border-radius: 0.25em;
+    background: #92D050;
+    padding: 20px;
+    width: 25%;
+    font-weight: bolder;
+    border-color: black;
+}

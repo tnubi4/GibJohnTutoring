@@ -1,0 +1,56 @@
+﻿@model IEnumerable<GibJohnTutoring.Models.BookTutor>
+
+@{
+    ViewData["Title"] = "Find a Tutor";
+}
+<div class="booking">
+    <h1>Create Booking</h1>
+</div>
+<p>
+    Create a Booking for a Tutor
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.TutorName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Time)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Date)
+            </th>
+            <th></th>
+        </tr>
+        
+    </thead>
+    
+    <tbody>
+
+        
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TutorName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Time)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Date)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+<div class="book">
+    <a asp-action="Create" class="btn">Book a tutor</a>
+</div>
