@@ -33,11 +33,14 @@ namespace GibJohnTutoring.Migrations
                     b.Property<DateTime?>("Date")
                         .HasColumnType("datetime2");
 
-                    b.Property<TimeOnly>("Time")
+                    b.Property<TimeOnly?>("Time")
                         .HasColumnType("time");
 
                     b.Property<string>("TutorName")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool?>("bool")
+                        .HasColumnType("bit");
 
                     b.HasKey("Id");
 

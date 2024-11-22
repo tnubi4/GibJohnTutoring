@@ -252,3 +252,38 @@ footer {
     font-weight: bolder;
     border-color: black;
 }
+
+.game {
+    display: flex; /* Enables flexbox for side-by-side layout */
+    align-items: center; /* Centers items vertically */
+    gap: 20px; /* Adds space between the text and the image */
+}
+
+.game-items {
+    flex: 1; /* Allows the text to take up available space */
+}
+
+.game-item img {
+    max-width: 100%; /* Ensures the image doesn’t exceed its container */
+    height: auto; /* Maintains aspect ratio of the image */
+    border-radius: 8px; /* Optional: Rounds the image corners */
+    width: 500px; /* Set a fixed width if desired */
+    height: 400px; /* Set a fixed height if desired */
+}
+
+.game-item h3 {
+    font-weight: bold;
+    color: #92D050;
+    outline-color: black;
+}
+
+.book a {
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    background: black;
+    padding: 12px;
+    width: 15%;
+    font-weight: bolder;
+    border-color: black;
+}
