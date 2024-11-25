@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using GibJohnTutoring.Data;
 using GibJohnTutoring.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace GibJohnTutoring.Controllers
 {
@@ -18,7 +19,7 @@ namespace GibJohnTutoring.Controllers
         {
             _context = context;
         }
-
+        [Authorize]
         // GET: BookTutors
         public async Task<IActionResult> Index()
         {

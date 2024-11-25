@@ -35,16 +35,19 @@ namespace GibJohnTutoring.Controllers
             return View();
         }
 
+        [Authorize]
         public IActionResult Collaborate()
         {
             return View();
         }
 
+        [Authorize]
         public IActionResult Resources()
         {
             return View();
         }
 
+        [Authorize]
         public IActionResult Games()
         {
             return View();
